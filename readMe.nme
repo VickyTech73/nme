@@ -1,0 +1,18 @@
+//..................................................................Starlight Inc___N.M.E____model_1.................................................................//
+This version of NME is the first implementation if the algorithm called NME, short for Enemy. Is basically a "dumb" A.I model. It uses generated random integers to 
+decide what to do next in a certain situation. The algorithm deals with an array of defence and attack moves. Based on the users input, the random integer generated
+will be used as an index number to select a specific defence move. If the user delay for about about a second or two, the program will automatically generate a 
+decision (random integer for indexing), to attack the user from the attack list.
+
+........................................................................DISADVANTAGES OF N.M.E.........................................................................
+1. It is not an actual A.I model. This can lead to undesired results.
+2. Big O notation: Since this solution is in its maiden form, the stability
+and quality of the Big O notation is not certain.
+3. Because of the random integers being generated at certain timeOuts and Intervals,
+a loop could be set. This can crush web browsers if used in HTML/Javascript or crush
+other systems that render it. Example : Game Engine, Web Browser, G.P.U, e.t.c.
+
+.............................................................................EXTRA NOTES...............................................................................
+In the later versions of this sim for N.M.E, other stuff will be added to make it more interactive. Example, is making the intro like a chat that prints outs outputs
+like the way Chat GPT does, Life bars for the player and N.M.E, Menu, Game difficulty levels and many more.
+Also, the model attacking after player delay is going to be added in later versions of this sim. For now, its just defending and counter-defending.

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.M.E 1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="algorithm.png">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="myBody">
+        <div class="mainDiv"> 
+            <div class="subDiv">
+                <h3 class="info">Slide kick => q</h3>
+                <h3 class="info">Slide sweep-kick => w</h3>
+                <h3 class="info">Jab => a</h3>
+                <h3 class="info">Uppercut => s</h3>
+                <h3 class="info">Head kick => z</h3>
+                <h3 class="info">Belly kick => x</h3>
+            </div>
+            <div class="topBar">
+                <button id="menuBtn">==</button>
+                <h3 class="heading">Default Moves list</h3>
+            </div>
+        </div>
+
+        <div class="miniBody">
+            <div class="mBContent" id="player">Player</div>
+            <div class="mBContent" id="nme">N.M.E</div>
+        </div>
+    </div>
+</body>
+<script>
+// I wrote this script here so that main.js will be only
+//for the functioning of N.M.E.
+
+var menuIsOpened = true
+var mainDiv = document.querySelector(".mainDiv")
+var menuBtn = document.getElementById("menuBtn")
+var recoil
+
+menuBtn.onclick = function() {
+    if (menuIsOpened){
+        recoil = mainDiv.style
+        shrinkMenu(mainDiv)
+        menuIsOpened = false
+    }
+    else{
+        enlargeMenu(mainDiv, recoil)
+        menuIsOpened = true
+    }
+}
+
+function shrinkMenu(div) {
+    div.style.height = "34px"
+}
+
+function enlargeMenu(div, recoil) {
+    div.style = recoil
+}
+
+
+
+</script>
+</html>
